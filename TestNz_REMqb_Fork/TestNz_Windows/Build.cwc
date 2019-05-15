@@ -1,5 +1,5 @@
  ;Set Nazara Engine Lib Variables
- -{_wLib_NazaraEngine}= Cwc-Lib/NazaraEngine
+ -{_wLib_NazaraEngine}= Cwc-Test/NazaraEngine_REMqb_Test
  >
  ;Build Nazara Engine
 -#Build {_wLib_NazaraEngine} -#To obj/TestNz_{_sPlatform}_{_sOpt}/ -I obj/
