@@ -16,4 +16,4 @@
 
 ### Windows (First Scene)
 
-[![Screen Shot](Github_Preview/NazaraFirstScene.png)]
+![Screen Shot](Github_Preview/NazaraFirstScene.png)
