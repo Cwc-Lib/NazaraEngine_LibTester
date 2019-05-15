@@ -6,6 +6,9 @@
  ;Build Nazara Engine
 -#Build {_wLib_NazaraEngine} -#To obj/TestNz_{_sPlatform}_{_sOpt}/ -I obj/
 >
+;Build Current Example
+-c src/ -o obj/cpp_{_sPlatform}_{_sOpt}/
+>
 ;Set Resources
 ;-#Copy Rc/ _out/{_sPlatform}_{_sOpt}/Rc/
 >
