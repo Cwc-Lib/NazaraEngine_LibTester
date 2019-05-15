@@ -1,0 +1,17 @@
+ ;Set Nazara Engine Lib Variables
+ -{_wLib_NazaraEngine}= Cwc-Lib/NazaraEngine
+ >
+ ;Build Nazara Engine
+-#Build {_wLib_NazaraEngine} -#To obj/TestNz_{_sPlatform}_{_sOpt}/ -I obj/
+>
+ ;Build Current Example
+-c src/ -o obj/cpp_{_sPlatform}_{_sOpt}/
+>
+;Get DLLs
+-#Copy obj/TestNz_{_sPlatform}_{_sOpt}/Nazara_Lib_Dynamic_{_sPlatform}_{_sOpt}/ _out/{_sPlatform}_{_sOpt}/
+>
+;Get Nazara Examples Resources
+-#Copy {_pLib_NazaraEngine}examples/bin/ _out/{_sPlatform}_{_sOpt}/
+>
+;Generate executable
+-o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*  -{vPreloadRc} -lNazaraNDK -lNazaraCore -lNazaraNoise -lNazaraLua -lNazaraPhysics3D -lNazaraPhysics2D -lNazaraRenderer -lNazaraPlatform -lNazaraNetwork -lNazaraUtility -lNazaraAudio -lNazaraGraphics

@@ -1,0 +1,13 @@
+ ;-- BUILD MeshInfo Nazara on WEB EMSC --
+ 
+ ;Set Nazara Engine Lib Variables
+ -{_wLib_NazaraEngine}= Cwc-Lib/NazaraEngine
+ >
+ ;Build Nazara Engine
+-#Build {_wLib_NazaraEngine} -#To obj/TestNz_{_sPlatform}_{_sOpt}/ -I obj/
+>
+;Set Resources
+;-#Copy Rc/ _out/{_sPlatform}_{_sOpt}/Rc/
+>
+;Generate executable
+-o obj/ -#To _out/{_sPlatform}_{_sOpt}/App.*  -{vPreloadRc}  Lib/FreeType.bc
