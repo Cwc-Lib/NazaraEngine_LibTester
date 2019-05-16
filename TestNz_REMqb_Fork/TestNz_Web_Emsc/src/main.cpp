@@ -122,7 +122,7 @@ int main()
 						if (parent)
 							std::cout << " (Parent: " << parent->GetName() << ')';
 
-						std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+						//std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 					}
 				}
 			}
@@ -139,7 +139,7 @@ int main()
 
 					char cChoice= 'y';
 					//std::cin >> cChoice;
-					std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+					//std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 					if (std::tolower(cChoice) == 'y')
 					{
@@ -150,7 +150,7 @@ int main()
 							std::cout << "\t\tStart frame: " << sequence->firstFrame << std::endl;
 							std::cout << "\t\tFrame count: " << sequence->frameCount << std::endl;
 							std::cout << "\t\tFrame rate: " << sequence->frameRate << std::endl;
-							std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+							//std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 						}
 					}
 				}
